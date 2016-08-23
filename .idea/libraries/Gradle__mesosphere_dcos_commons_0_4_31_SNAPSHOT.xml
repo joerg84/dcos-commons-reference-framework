@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: mesosphere:dcos-commons:0.4.31-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mesosphere/dcos-commons/0.4.31-SNAPSHOT/c56fc917670ccf50df59c5d0de148bbdcc97b535/dcos-commons-0.4.31-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mesosphere/dcos-commons/0.4.31-SNAPSHOT/8d5d478e8e358e156320ec91a2cd8b273075785b/dcos-commons-0.4.31-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

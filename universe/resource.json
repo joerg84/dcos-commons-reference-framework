@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "uris": {
+      "jre-tar-gz": "https://s3-us-west-2.amazonaws.com/infinity-artifacts/kafka/jre-8u91-linux-x64.tar.gz",
+      "scheduler-zip": "{{artifact-dir}}/scheduler.zip",
+      "executor-zip": "{{artifact-dir}}/executor.zip"
+    }
+  },
+  "images": {
+    "icon-small": "https://s3-us-west-1.amazonaws.com/hello-universe-assets/hello-small.png",
+    "icon-medium": "https://s3-us-west-1.amazonaws.com/hello-universe-assets/hello-medium.png",
+    "icon-large": "https://s3-us-west-1.amazonaws.com/hello-universe-assets/hello-large.png"
+  }
+}

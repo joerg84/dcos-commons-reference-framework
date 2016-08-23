@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor.iml" group="reference-executor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor_main.iml" group="reference-executor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-executor/reference-executor_test.iml" group="reference-executor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-framework.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons.iml" group="reference-framework-commons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons_main.iml" group="reference-framework-commons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-framework-commons/reference-framework-commons_test.iml" group="reference-framework-commons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-state/reference-state.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-state/reference-state.iml" group="reference-state" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-state/reference-state_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-state/reference-state_main.iml" group="reference-state" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reference-state/reference-state_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reference-state/reference-state_test.iml" group="reference-state" />
+    </modules>
+  </component>
+</project>

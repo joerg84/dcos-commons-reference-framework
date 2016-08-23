@@ -1,0 +1,20 @@
+group 'com.mesosphere.dcos.referenceframework'
+version '0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    mesosVer = "1.0.0"
+}
+
+dependencies {
+    compile "mesosphere:dcos-commons:0.4.31-SNAPSHOT"
+    compile "org.apache.mesos:mesos:${mesosVer}"
+
+}

@@ -1,0 +1,56 @@
+{
+  "type":"object",
+    "properties":{
+      "service":{
+        "type":"object",
+        "description": "DC/OS service configuration properties",
+        "properties":{
+          "name" : {
+            "description":"The name of the Hello service instance",
+            "type":"string",
+            "default":"hello"
+          },
+          "principal": {
+            "description": "The principal for the Hello service instance.",
+            "type": "string",
+            "default": "hello-principal"
+          },
+          "secret_name": {
+            "description": "Name of the Secret Store credentials to use for DC/OS service authentication. This should be left empty unless service authentication is needed.",
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required":[
+          "placement_strategy",
+          "phase_strategy"
+        ]
+      },
+      "executor":{
+        "description":"Reference executor configuration properties",
+        "type":"object",
+        "properties":{
+          "cpus":{
+            "description":"Executor cpu requirements",
+            "type":"number",
+            "default":0.5
+          },
+          "mem":{
+            "description":"Executor mem requirements",
+            "type":"integer",
+            "default":256
+          },
+          "disk":{
+            "description":"Executor disk requirements",
+            "type":"integer",
+            "default":0
+          }
+        },
+        "required":[
+          "cpus",
+          "mem",
+          "disk"
+        ]
+      }
+    }
+}

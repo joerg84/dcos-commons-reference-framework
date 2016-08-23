@@ -1,0 +1,25 @@
+ext {
+    systemRulesVer = "1.16.0"
+    mesosVer = "1.0.0"
+}
+
+
+dependencies {
+    compile "mesosphere:dcos-commons:0.4.31-SNAPSHOT"
+    compile "org.apache.mesos:mesos:${mesosVer}"
+    compile "ch.qos.logback:logback-classic:1.1.3"
+    testCompile "com.github.stefanbirkner:system-rules:${systemRulesVer}"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+distributions {
+    main {
+        baseName = 'executor'
+        version = ""
+    }
+}
+
+mainClassName = 'com.mesosphere.dcos.kafka.executor.Main'

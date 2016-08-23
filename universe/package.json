@@ -1,0 +1,12 @@
+{
+  "packagingVersion": "2.0",
+  "name": "hello",
+  "version": "{{package-version}}",
+  "maintainer": "support@mesosphere.io",
+  "description": "Hello world running on DC/OS",
+  "selected": true,
+  "framework": true,
+  "tags": ["bootstrap"],
+  "postInstallNotes": "Hello world is being installed",
+  "postUninstallNotes": "Hello world has been uninstalled"
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.mesos:mesos:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.mesos/mesos/1.0.0/2a7e7503acbc129646bad71d654f749abd57fc18/mesos-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.mesos/mesos/1.0.0/1d7cdbd5c669bd52eee10de9fb253b6ab25718f5/mesos-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

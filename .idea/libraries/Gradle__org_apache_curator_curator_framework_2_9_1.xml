@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.curator:curator-framework:2.9.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.9.1/815f5efdcbab8cf48130433fa3ea1df3ac2b76f6/curator-framework-2.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.9.1/5552c2854b0f9ec0b1b6c54db77fb2713f36b640/curator-framework-2.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

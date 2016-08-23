@@ -1,0 +1,77 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+plugins {
+  id 'com.github.ksoichiro.console.reporter' version '0.4.0'
+}
+
+apply from: "$rootDir/gradle/universe.gradle"
+
+allprojects {
+  apply plugin: 'idea'
+  apply plugin: 'eclipse'
+  apply plugin: 'jacoco'
+  apply plugin: 'com.github.ksoichiro.console.reporter'
+
+  group = "com.mesosphere.dcos.referenceframework"
+  version = "0.1"
+}
+
+ext {
+  serviceVersion = "0.10.0.0"
+}
+
+idea {
+  project {
+    jdkName = '1.8'
+    languageLevel = '1.8'
+    ipr {
+      withXml { provider ->
+        provider.node.component
+          .find { it.@name == 'VcsDirectoryMappings' }
+          .mapping.@vcs = 'Git'
+      }
+    }
+  }
+}
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'application'
+  apply from: "$rootDir/gradle/quality.gradle"
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  mainClassName = "com.mesosphere.dcos.kafka.state.Main"
+
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+      url "https://downloads.mesosphere.com/maven/"
+    }
+    maven {
+      url "https://downloads.mesosphere.com/maven-snapshot/"
+    }
+  }
+
+  // Print results on the fly
+  test {
+    testLogging {
+      events "passed", "skipped", "failed"
+    }
+  }
+
+  // Include unit test report in 'check'
+  // (jacoco itself depends on 'test')
+  check.dependsOn jacocoTestReport
+  jacocoTestReport {
+    reports {
+      html.destination "${buildDir}/jacoco"
+    }
+  }
+}

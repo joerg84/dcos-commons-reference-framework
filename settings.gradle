@@ -1,0 +1,6 @@
+rootProject.name = 'reference-framework'
+
+include "reference-state"
+include "reference-executor"
+include 'reference-state'
+
